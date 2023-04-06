@@ -31,7 +31,7 @@ import { task9Old, task9New } from './es-features/task9';
 import { task11Old, task11New } from './es-features/task11';
 // import { task12Old, task12New } from './es-features/task12';
 import { task13Old, task13New } from './es-features/task13';
-// import { task14Old, task14New } from './es-features/task14';
+import { task14Old, task14New } from './es-features/task14';
 // import { task15Old, task15New } from './es-features/task15';
 
 console.log('task1 old', task1Old(10) === 500); // true
@@ -97,10 +97,10 @@ console.log('=============');
 console.log('task13 old', task13Old([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
 console.log('task13 new', task13New([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
 
-// console.log('=============');
+console.log('=============');
 
-// console.log('task14 old', task14Old({ a: 10, b: 55, c: 3 })); // [["a", 10], ["b", 55], ["c", 3]]
-// console.log('task14 new', task14New({ a: 10, b: 55, c: 3 })); // [["a", 10], ["b", 55], ["c", 3]]
+console.log('task14 old', task14Old({ a: 10, b: 55, c: 3 })); // [["a", 10], ["b", 55], ["c", 3]]
+console.log('task14 new', task14New({ a: 10, b: 55, c: 3 })); // [["a", 10], ["b", 55], ["c", 3]]
 
 // console.log('=============');
 
