@@ -39,9 +39,12 @@ export function task6New() {
   }
 
   const tmp = userModule();
-  const { name, value } = tmp;
-  const { name: role } = tmp.role;
-  const { id: firstCaseId } = tmp.cases[0];
+  const {
+    name,
+    value,
+    role: { name: role },
+    cases: [{ id: firstCaseId }],
+  } = tmp;
   const isActive = (tmp.isActive && tmp.isActive) || false;
 
   return [name, value, role, isActive, firstCaseId];
