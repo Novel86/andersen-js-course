@@ -30,7 +30,7 @@ import { task9Old, task9New } from './es-features/task9';
 // import { task10Old, task10New } from './es-features/task10';
 import { task11Old, task11New } from './es-features/task11';
 // import { task12Old, task12New } from './es-features/task12';
-// import { task13Old, task13New } from './es-features/task13';
+import { task13Old, task13New } from './es-features/task13';
 // import { task14Old, task14New } from './es-features/task14';
 // import { task15Old, task15New } from './es-features/task15';
 
@@ -92,10 +92,10 @@ console.log('task11 new', task11New({ a: null }, 'a')); // false
 // console.log('task12 old', task12Old({ obj2: { some: true }}, 'obj2', 'some2' )); // undefined
 // console.log('task12 new', task12New({ obj2: { some: true }}, 'obj2', 'some2' )); // undefined
 
-// console.log('=============');
+console.log('=============');
 
-// console.log('task13 old', task13Old([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
-// console.log('task13 new', task13New([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
+console.log('task13 old', task13Old([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
+console.log('task13 new', task13New([1, 2, 3, [4, 5]])); // [1, 2, 3, 4, 5]
 
 // console.log('=============');
 
