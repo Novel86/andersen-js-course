@@ -38,6 +38,7 @@ import { task15Old, task15New } from './es-features/task15';
 import any from './array-practice/task1';
 import arrayDiff from './array-practice/task2';
 import forEachRight from './array-practice/task3';
+import union from './array-practice/task4';
 
 console.log('task1 old', task1Old(10) === 500); // true
 console.log('task1 new', task1New(10) === 500); // true
@@ -142,12 +143,13 @@ console.log('=============');
 // Task 3
 forEachRight([1, 2, 3, 4], (val) => console.log(val)); // в консоль 4 3 2 1
 
-// console.log('=============');
+console.log('=============');
 
-// // Task 4
-//
+// Task 4
+console.log(union([5, 1, 2, 3, 3], [4, 3, 2])); // [5, 1, 2, 3, 4]
+console.log(union([5, 1, 3, 3, 4], [1, 3, 4])); // [5, 1, 3, 4]
 
-// console.log('=============');
+console.log('=============');
 
 // // Task 5
 //
