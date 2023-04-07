@@ -10,11 +10,16 @@
 
 // Раскомментировать нижнее, при начале реализации
 
-// const meetups = [
-//   { name: 'JavaScript', isActive: true, members: 100 },
-//   { name: 'Angular', isActive: true, members: 900 },
-//   { name: 'Node', isActive: false, members: 600 },
-//   { name: 'React', isActive: true, members: 500 },
-// ];
+export const meetups = [
+  { name: 'JavaScript', isActive: true, members: 100 },
+  { name: 'Angular', isActive: true, members: 900 },
+  { name: 'Node', isActive: false, members: 600 },
+  { name: 'React', isActive: true, members: 500 },
+];
 
-// function membersOnActiveMeetups(meetups) {}
+export function membersOnActiveMeetups(array) {
+  return array.reduce((accum, item) => {
+    if (item.isActive) accum += item.members;
+    return accum;
+  }, 0);
+}
