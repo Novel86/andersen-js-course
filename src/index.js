@@ -34,6 +34,9 @@ import { task13Old, task13New } from './es-features/task13';
 import { task14Old, task14New } from './es-features/task14';
 import { task15Old, task15New } from './es-features/task15';
 
+// задачи array-practice
+import any from './array-practice/task1';
+
 console.log('task1 old', task1Old(10) === 500); // true
 console.log('task1 new', task1New(10) === 500); // true
 
@@ -120,3 +123,54 @@ console.log(
 ); // {a: 1, b: 2}
 
 console.log('=============');
+// Task 1
+console.log(any([0, 1, 2, 0], (x) => x >= 2)); // true
+console.log(any([0, 0, 1, 0])); // true
+console.log(any([0, 0, 0, 0])); // false
+
+console.log('=============');
+
+// Task 2
+//
+
+// console.log('=============');
+
+// Task 3
+//
+
+// console.log('=============');
+
+// // Task 4
+//
+
+// console.log('=============');
+
+// // Task 5
+//
+
+// console.log('=============');
+
+// // Task 6
+//
+
+// console.log('=============');
+
+// // Task 7
+//
+
+// console.log('=============');
+
+// // Task 8
+//
+
+// console.log('=============');
+
+// // Task 9
+//
+
+// console.log('=============');
+
+// // Task 10
+//
+
+// console.log('=============');
