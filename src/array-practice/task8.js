@@ -11,3 +11,11 @@
  * console.log(without([2, 1, 2, 3], 1, 2)) -> [3]
  * console.log(without([2, 1, 10, 20], 1, 2)) -> [10, 20]
  */
+export default function without(array) {
+  //   const [_, ...values] = arguments;
+  const values = Array.from(arguments).slice(1);
+  return array.reduce((accum, item) => {
+    if (!values.includes(item)) accum.push(item);
+    return accum;
+  }, []);
+}
