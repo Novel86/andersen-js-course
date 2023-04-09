@@ -12,7 +12,7 @@
  * console.log(take([1, 2, 3], 2)); -> [1, 2]
  */
 export default function take(array, count) {
-  return array.splice(0, count);
+  return array.slice(0, count);
 }
 take([1, 2, 3], 5);
 take([1, 2, 3], 2);
