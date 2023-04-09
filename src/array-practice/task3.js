@@ -13,6 +13,5 @@
  */
 
 export default function forEachRight(array, cb) {
-  array.reverse().forEach(cb);
+  array.slice().reverse().forEach(cb);
 }
-forEachRight([1, 2, 3, 4], (val) => console.log(val));
