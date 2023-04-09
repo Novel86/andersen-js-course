@@ -16,18 +16,23 @@
  * console.log(arrayDiff([1, 3, 3, 4], [1, 3, '4'])); -> [4, '4']
  */
 
+// export default function arrayDiff(arr1, arr2) {
+//   const elementsCountMap = [...arr1, ...arr2].reduce(
+//     (accum, item) => accum.set(item, (accum.get(item) || 0) + 1),
+//     new Map()
+//   );
+
+//   const arrayOfUnique = Array.from(elementsCountMap).reduce((accum, item) => {
+//     if (item[1] === 1) {
+//       accum.push(item[0]);
+//     }
+//     return accum;
+//   }, []);
+
+//   return arrayOfUnique;
+// }
+
+// решение от Виктора
 export default function arrayDiff(arr1, arr2) {
-  const elementsCountMap = [...arr1, ...arr2].reduce(
-    (accum, item) => accum.set(item, (accum.get(item) || 0) + 1),
-    new Map()
-  );
-
-  const arrayOfUnique = Array.from(elementsCountMap).reduce((accum, item) => {
-    if (item[1] === 1) {
-      accum.push(item[0]);
-    }
-    return accum;
-  }, []);
-
-  return arrayOfUnique;
+  return [...arr1, ...arr2].filter((value) => !arr1.includes(value) || !arr2.includes(value));
 }
