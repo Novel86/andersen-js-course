@@ -17,10 +17,6 @@ export function task15Old(arr) {
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
 export function task15New(arr) {
-  const newArray = arr.reduce((accum, item) => {
-    const [key, value] = item;
-    accum[key] = value;
-    return accum;
-  }, {});
+  const newArray = Object.fromEntries(arr);
   return newArray;
 }
