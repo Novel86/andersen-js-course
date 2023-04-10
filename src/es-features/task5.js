@@ -18,8 +18,7 @@ export function task5Old(array, obj) {
 
 export function task5New(array, obj) {
   const [name, val] = array;
-  const [objName, objValue] = Object.values(obj);
+  const { name: objName, val: objValue } = obj;
 
   return [name, val, objName, objValue];
 }
-task5New(['test', 42], { name: 'foo', val: 7 });
