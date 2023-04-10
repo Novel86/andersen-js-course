@@ -17,6 +17,6 @@
     "prefer-arrow-callback": "off",
     "func-names": "off",
     "no-underscore-dangle": "off",
-    "no-console": "warn"
+    "no-console": "off"
   }
 }

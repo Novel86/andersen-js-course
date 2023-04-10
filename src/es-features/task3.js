@@ -14,4 +14,7 @@ export function task3Old(params) {
 // Напишите реализацию функции task3Old на ES6+ ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
-export function task3New() {}
+export function task3New() {
+  return [1, 2].concat(...arguments);
+}
+task3New(['hello', 'test', 12]);

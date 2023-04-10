@@ -14,3 +14,21 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+// export default function any(arr, cb) {
+//   let answer;
+//   if (!cb && !arr.some((item) => Boolean(item))) {
+//     answer = false;
+//   } else if (!cb) {
+//     answer = true;
+//   } else {
+//     answer = arr.some(cb);
+//   }
+//   return answer;
+// }
+
+// вариант от Виктора
+const any = (array, cb = Boolean) => array.some(cb);
+
+any([0, 0, 0, 0]);
+any([0, 1, 2, 0], (x) => x >= 2);
+any([0, 0, 1, 0]);
