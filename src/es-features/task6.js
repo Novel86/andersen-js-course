@@ -35,6 +35,7 @@ export function task6New() {
       value: 100,
       role: { name: 'Admin' },
       cases: [{ id: '1' }],
+      //   isActive: '1',
     };
   }
 
@@ -44,8 +45,9 @@ export function task6New() {
     value,
     role: { name: role },
     cases: [{ id: firstCaseId }],
+    isActive = false,
   } = tmp;
-  const isActive = (tmp.isActive && tmp.isActive) || false;
+  //   const isActive = tmp?.isActive || false;
 
   return [name, value, role, isActive, firstCaseId];
 }
