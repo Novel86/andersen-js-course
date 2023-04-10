@@ -11,8 +11,5 @@
  * console.log(indexOfAll([1, 2, 3], 4)); -> []
  */
 export default function indexOfAll(array, value) {
-  return array.reduce((accum, item, index) => {
-    if (item === value) accum.push(index);
-    return accum;
-  }, []);
+  return array.reduce((accum, item, index) => (item === value ? [...accum, index] : accum), []);
 }
